@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="15.116" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="FB Application" name="Check ForgetPassWord functionality" time="9.404">
+<testsuite name="Cucumber" time="17.647" tests="4" skipped="0" failures="1" errors="0">
+<testcase classname="Base Application" name="Check login functionality for Base app - #1.1" time="8.304">
+<system-out><![CDATA[
+Given Get fb URL for Base...................................................passed
+When Enter "BASE754_17" "admin@coresolutionsinc.com" "Test@12345" for hotal page.passed
+And Click login Button in Base page.........................................passed
+Then Get current page title base login page.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="FB Application" name="Check ForgetPassWord functionality" time="8.296">
 <system-out><![CDATA[
 Given Get fb URL............................................................passed
 When Click forget_password button in fb page................................passed
@@ -9,12 +17,62 @@ And Click forget button in fb page..........................................pass
 Then Get current page Title in fb forget page...............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="FB Application Login Functionality" name="Check login functionality" time="5.368">
+<testcase classname="FB Application Login Functionality" name="Check login functionality" time="17.273">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id='loginButton']&quot;}
+  (Session info: chrome=132.0.6834.159)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [424208c9b10f34b9d14ca864dc2caf23, findElement {value=//button[@id='loginButton'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.159, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: D:\Users\manojs.465\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56269}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56269/devtoo..., se:cdpVersion: 132.0.6834.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 424208c9b10f34b9d14ca864dc2caf23">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='loginButton']"}
+  (Session info: chrome=132.0.6834.159)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [424208c9b10f34b9d14ca864dc2caf23, findElement {value=//button[@id='loginButton'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.159, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: D:\Users\manojs.465\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56269}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56269/devtoo..., se:cdpVersion: 132.0.6834.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 424208c9b10f34b9d14ca864dc2caf23
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at org.Helper.BaseClass.btnclk(BaseClass.java:46)
+	at org.Steps.FB_Steps.click_login_button_in_fb_page(FB_Steps.java:26)
+	at ✽.Click login Button in fb page(file:///D:/Eclipse%20IDE/CucumberJenkins-NEW/src/test/resources/FeatureFiles/FaceBook/FB_Login.feature:6)
+]]>
+</failure>
 <system-out><![CDATA[
 Given Get fb URL............................................................passed
 When Enter UserName and PassWord for fb page................................passed
-And Click login Button in fb page...........................................passed
-Then Get current page title fb login page...................................passed
+And Click login Button in fb page...........................................failed
+Then Get current page title fb login page...................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Base Application" name="Check login functionality for Base app - #1.2" time="3.526">
+<system-out><![CDATA[
+Given Get fb URL for Base...................................................passed
+When Enter "BASE754_16" "admin@coresolutionsinc.com" "Test@12345" for hotal page.passed
+And Click login Button in Base page.........................................passed
+Then Get current page title base login page.................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

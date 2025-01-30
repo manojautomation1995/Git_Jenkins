@@ -50,9 +50,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                9,
-                0,
-                0,
+                15,
+                1,
+                1,
                 0,
                 0
             ],
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 9) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 17) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -106,8 +106,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                2,
-                0
+                3,
+                1
             ],
             backgroundColor: [
                 "#00B000",
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 2) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 4) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -154,7 +154,7 @@ $(document).ready(function() {
         datasets: [{
             data: [
                    2,
-                   0
+                   1
                ],
                backgroundColor: [
                 "#00B000",
@@ -187,7 +187,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 2) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 3) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -228,7 +228,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>CucumberWithTestNG</td>
-      <td>30 Jan 2025, 08:18</td>
+      <td>30 Jan 2025, 09:24</td>
     </tr>
   </tbody>
 </table>
@@ -337,7 +337,24 @@ $(document).ready(function() {
 
   <tbody>
       <tr>
-        <td class="tagname"><a href="report-feature_3652676574.html">FB Application</a></td>
+        <td class="tagname"><a href="report-feature_2944472039.html">Base Application</a></td>
+
+        <td      class="passed"    >8</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">8</td>
+
+        <td  class="passed"    >2</td>
+        <td >0</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="3001143900">3.001</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_1_3652676574.html">FB Application</a></td>
 
         <td      class="passed"    >5</td>
         <td >0</td>
@@ -350,58 +367,58 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="2636198300">2.636</td>
+        <td class="duration" data-value="2685088300">2.685</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_1_2842665030.html">FB Application Login Functionality</a></td>
+        <td class="tagname"><a href="report-feature_2_2842665030.html">FB Application Login Functionality</a></td>
 
-        <td      class="passed"    >4</td>
-        <td >0</td>
-        <td >0</td>
+        <td      class="passed"    >2</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >1</td>
         <td >0</td>
         <td >0</td>
         <td class="total">4</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="2457316300">2.457</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="11659022900">11.659</td>
+        <td class="failed">Failed</td>
       </tr>
   </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>9</td>
+      <td>15</td>
+      <td>1</td>
+      <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>9</td>
+      <td>17</td>
 
-      <td>2</td>
-      <td>0</td>
-      <td>2</td>
+      <td>3</td>
+      <td>1</td>
+      <td>4</td>
 
-      <td class="duration">5.093</td>
-      <td>2</td>
+      <td class="duration">17.345</td>
+      <td>3</td>
     </tr>
     <tr>
       <td></td>
-      <td>100.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
+      <td>88.24%</td>
+      <td>5.88%</td>
+      <td>5.88%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>100.00%</td>
-      <td>0.00%</td>
+      <td>75.00%</td>
+      <td>25.00%</td>
       <td></td>
       <td></td>
-      <td>100.00%</td>
+      <td>66.67%</td>
     </tr>
   </tfoot>
 </table>

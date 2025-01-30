@@ -15,7 +15,7 @@ import net.masterthought.cucumber.ReportBuilder;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/FeatureFiles/FaceBook", glue = { "org.Steps",
+@CucumberOptions(features = "src\\test\\resources\\FeatureFiles", glue = { "org.Steps",
 		"org.Hooks" }, dryRun = false, monochrome = true, plugin = { "pretty",
 				"html:.\\AllReports\\Cucumber-report.html", "json:.\\AllReports\\Cucumber-report.json",
 				"junit:.\\AllReports\\Cucumber-report.xml", "rerun:.\\AllReports\\failed.txt" })

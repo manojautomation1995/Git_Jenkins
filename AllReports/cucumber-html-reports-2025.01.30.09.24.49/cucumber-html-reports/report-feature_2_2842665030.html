@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Feature: FB Application</title>
+<title>Cucumber Reports  - Feature: FB Application Login Functionality</title>
 
 </head>
 <body>
@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>CucumberWithTestNG</td>
-      <td>30 Jan 2025, 08:18</td>
+      <td>30 Jan 2025, 09:24</td>
     </tr>
   </tbody>
 </table>
@@ -126,20 +126,20 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">FB Application</td>
-          <td      class="passed"    >5</td>
+          <td class="tagname">FB Application Login Functionality</td>
+          <td      class="passed"    >2</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >1</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td >0</td>
-          <td class="total">5</td>
+          <td class="total">4</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="2636198300">2.636</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="11659022900">11.659</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -171,9 +171,9 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
-  <span class="name">FB Application</span>
+  <span class="name">FB Application Login Functionality</span>
 
 
 </div>
@@ -189,14 +189,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">2.636</span>
+  <span class="lead-duration duration">11.659</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Check ForgetPassWord functionality</span>
+  <span class="name">Check login functionality</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -205,7 +205,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -227,7 +227,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">org.Hooks.Hook.browserOpen()</span>
 
-  <span class="lead-duration duration">6.001</span>
+  <span class="lead-duration duration">4.895</span>
 
           </div>
 
@@ -244,9 +244,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -256,7 +256,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -264,7 +264,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">Get fb URL</span>
 
-  <span class="lead-duration duration">0.940</span>
+  <span class="lead-duration duration">1.209</span>
 
 </div>
 
@@ -289,9 +289,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">Click forget_password button in fb page</span>
+  <span class="name">Enter UserName and PassWord for fb page</span>
 
-  <span class="lead-duration duration">1.212</span>
+  <span class="lead-duration duration">0.384</span>
 
 </div>
 
@@ -314,11 +314,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And failed">
   <span class="keyword indention">And</span>
-  <span class="name">Enter PhoneNumber in fb page</span>
+  <span class="name">Click login Button in fb page</span>
 
-  <span class="lead-duration duration">0.261</span>
+  <span class="lead-duration duration">10.066</span>
 
 </div>
 
@@ -326,6 +326,48 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id='loginButton']&quot;}
+  (Session info: chrome=132.0.6834.159)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [424208c9b10f34b9d14ca864dc2caf23, findElement {value=//button[@id='loginButton'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.159, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: D:\Users\manojs.465\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56269}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56269/devtoo..., se:cdpVersion: 132.0.6834.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 424208c9b10f34b9d14ca864dc2caf23
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at org.Helper.BaseClass.btnclk(BaseClass.java:46)
+	at org.Steps.FB_Steps.click_login_button_in_fb_page(FB_Steps.java:26)
+	at &#10045;.Click login Button in fb page(file:///D:/Eclipse%20IDE/CucumberJenkins-NEW/src/test/resources/FeatureFiles/FaceBook/FB_Login.feature:6)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -341,38 +383,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Click forget button in fb page</span>
-
-  <span class="lead-duration duration">0.200</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">Get current page Title in fb forget page</span>
+  <span class="name">Get current page title fb login page</span>
 
-  <span class="lead-duration duration">0.021</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -399,7 +414,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -411,13 +426,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">org.Hooks.Hook.tkscrshot(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.052</span>
 
           </div>
 
@@ -426,6 +441,19 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
+      <a>img.png</a>
+      <a href="embeddings/embedding_-368654077.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-6" class="collapse collapsable-details ">
+        <pre class="embedding-content">This file cannot be displayed. Use download button to get the content as file.</pre>
+    </div>
+  </div>
+  </div>
 
         </div>
         <div class="hook">
@@ -433,7 +461,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">org.Hooks.Hook.browserClose()</span>
 
-  <span class="lead-duration duration">0.728</span>
+  <span class="lead-duration duration">0.641</span>
 
           </div>
 

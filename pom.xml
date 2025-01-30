@@ -67,6 +67,9 @@
 					<includes>
 						<include>**/All_Runner.java</include>
 					</includes>
+					<parallel>methods</parallel>
+					<threadCount>4</threadCount>
+					<perCoreThreadCount>false</perCoreThreadCount>
 				</configuration>
 			</plugin>
 		</plugins>
