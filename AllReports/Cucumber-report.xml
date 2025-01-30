@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="15.116" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="FB Application" name="Check ForgetPassWord functionality" time="9.404">
+<system-out><![CDATA[
+Given Get fb URL............................................................passed
+When Click forget_password button in fb page................................passed
+And Enter PhoneNumber in fb page............................................passed
+And Click forget button in fb page..........................................passed
+Then Get current page Title in fb forget page...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="FB Application Login Functionality" name="Check login functionality" time="5.368">
+<system-out><![CDATA[
+Given Get fb URL............................................................passed
+When Enter UserName and PassWord for fb page................................passed
+And Click login Button in fb page...........................................passed
+Then Get current page title fb login page...................................passed
+]]></system-out>
+</testcase>
+</testsuite>
