@@ -14,7 +14,7 @@ public class FB_Login extends BaseClass{
 	private WebElement email;
 	@FindBy(xpath = "//input[@id='pass']")
 	private WebElement password;
-	@FindBy(xpath = "//button[@id='loginButton']")
+	@FindBy(xpath = "//button[@id='loginbutton']")
 	private WebElement login;
 
 	public WebElement getEmail() {
